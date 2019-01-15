@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MyBlog</title>
+</head>
+<body>
+...
+<!-- 新加如下代码 -->
+<div>
+    <ul>
+    <h4>Blog教程作者信息：</h4>
+        {% for category in allcategory  %}
+        <li>{{ category.id }}</li>
+        <li>{{ category.name }}</li>
+        {% endfor %}
+    </ul>
+</div>
+</body>
+</html>
